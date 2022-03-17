@@ -8,7 +8,7 @@ Hotspot[] frameHotspots;
 boolean mudarFrame=false;
 
 void setup() {
-  size(1280, 720);
+  size(1080, 1080);
   noStroke();
   frameRate(60);
   currentFrame=0;
