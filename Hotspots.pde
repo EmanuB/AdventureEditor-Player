@@ -15,7 +15,7 @@ class Hotspot {
     println(destino);
   }
   void fazerHotspot() {
-    fill(200, 50, 200, 80);
+    fill(200, 50, 200, 0);
     rect(x1, y1, (x3-x1), (y3-y1));
   }
   boolean mouseChecar() {
@@ -23,5 +23,11 @@ class Hotspot {
       return true;
     } else
       return false;
+  }
+  void Mapear(){
+  x1=int(map(x1,0,1080,0,width));
+  y1=int(map(y1,0,1080,0,height));
+  x3=int(map(x3,0,1080,0, width));
+  y3=int(map(y3,0,1080,0, height));
   }
 }
